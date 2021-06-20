@@ -1,0 +1,147 @@
+.top-nav-collapse{
+  background: rgba(255 228 225,0.5);
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: rgba(96, 96, 96, 0.5);
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(96, 96, 96, 0.5);
+  }
+}
+
+.rgba-gradient {
+  background: rgba(35, 7, 77, 0.6);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.streak.streak-photo {
+  background-attachment: fixed;
+}
+
+
+
+
+.bg-gray{
+    background:rgba(96, 96, 96, 0.5);
+}
+
+.box{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.fiximage{
+    top: 100%;
+    height: 120%;
+}
+
+.paddingleft25px{
+  padding-left: 25px;
+}
+
+.paddingtop25px{
+  padding-top: 25px;
+}
+.paddingall25px{
+  padding: 25px;
+}
+.searches-icon{
+    width: 1px;
+    height: 0.1px;
+    margin-right: 25px;
+}
+
+
+
+
+
+
+.boximg {
+    height: 350px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*设置大ul的大小及定位*/
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/*设置大li样式*/
+.content li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-clip: border-box;
+    background-size: cover;
+}
+/*将第一张图片后的图片隐藏*/
+#li1~li{display:none;}
+/*设置大li背景图片*/
+#li1 {background-image: url(../picture/GDSX.jpg);}
+#li2 {background-image: url(../picture/XXDS.jpg);}
+#li3 {background-image: url(../picture/GLL.jpg);}
+/*点击a标签,切换大图片*/
+#li1:target,
+#li2:target,
+#li3:target{
+    display: block;
+}
+/*定位*/
+.conlist {
+    position: absolute;
+    bottom: 0;
+}
+/*设置li的样式*/
+.conlist li {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 150px;
+    display: block;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+/*给li设置背景颜色*/
+.conlist li:first-child {background: #48e448;}
+.conlist li:nth-child(2) {background: #a35bb4;}
+.conlist li:last-child {background: #486de9;}
+/*设置a标签的样式*/
+.conlist a {
+    position: absolute;
+    display: block;
+    width: 145px;
+    height: 145px;
+    border: 3px solid #fff;
+    border-radius: 75px;
+    background-position: center;
+    background-clip: border-box;
+    background-size: cover;
+    left: 10%;
+    top: -50%;
+}
+
+.conlist span {
+    line-height: 220px;
+    font-family: "黑体";
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.rightleft{
+  width: 80px;
+  height: 80px;
+}
